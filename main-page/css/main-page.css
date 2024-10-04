@@ -1,0 +1,286 @@
+@import url('https://fonts.cdnfonts.com/css/shark-week');
+@import url('https://fonts.cdnfonts.com/css/unbound-gamer');
+@import url('https://fonts.cdnfonts.com/css/bronten');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bronten', sans-serif;
+
+}
+
+html{
+    background-color: #1B402E;
+}
+
+header{
+    
+    width: 100%;
+    padding: 40px;
+    background-color: #04BF68;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #04BF68, #1B402E);
+
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+header h1{
+    font-family: 'Unbound Gamer', sans-serif;
+    font-size: 52px;
+}
+
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: 500ms;
+}
+
+button:hover{
+    border: none;
+    border: 3px solid white;
+    background-color: white;
+    cursor: pointer;
+}
+main{
+    padding: 20px;
+}
+.colecao-de-jogos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-auto-rows: 500px;
+    gap: 80px;
+    
+    
+}
+
+#btn-mais{
+    border-radius: 30px;
+    height: 60px;
+
+}
+.card{
+    height: 450px;
+    background-color: #04bf6800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /*box-shadow: 0px 6px 15px 15px rgba(0, 0, 0, 0.274);*/
+    position: relative;
+    transition: 500ms;
+    border-radius: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.card:hover{
+    
+    transition: 500ms;
+    box-shadow: 0px 6px 20px 20px rgba(0, 0, 0, 0.349);
+    height: 500px;
+}
+
+.text{
+    border-radius: inherit;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+    background: linear-gradient(to bottom, #04bf6800, #000000);
+}
+.text p{
+    color: yellow;
+}
+
+.text button{
+    background-color: white;
+}
+
+.text button:hover{
+    background-color: #04BF68;
+    border: 1px solid #04BF68;
+}
+
+
+.modal-overlay{
+    visibility: hidden;
+    opacity: 0;
+
+    /* Começa oculto */
+    position: fixed; /* Ocupa a tela inteira */
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+.modal{
+    
+    box-shadow: 0px 6px 20px 20px rgba(0, 0, 0, 0.349);
+    background-color: #038C5A;
+    border:5px solid #206d48;
+    padding: 20px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+
+    transform: scale(0.7); /* Começa menor */
+    opacity: 0; /* Inicia invisível */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    visibility: visible; /* Mostra o modal */
+    opacity: 1; /* Torna o modal visível */
+    transition: opacity 0.5s ease; /* Anima a opacidade sem delay */
+}
+
+.modal.active {
+    transform: scale(1); /* Volta ao tamanho original */
+    opacity: 1; /* Faz o modal aparecer */
+}
+
+.modal #buttons{
+    margin-top: 20px;
+}
+
+.text-in form{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.text-in form label{
+    text-align: start;
+}
+
+.text-in p{
+    width: 100px;
+}
+.text-in input{
+    font-size: large;
+    width: 350px;
+    height: 30px;
+}
+
+.text-in input:focus{
+    outline: none;
+}
+#save{
+    font-size: large;
+}
+#save:hover{
+    color: white;
+    background-color: green;
+}
+#delete{
+    font-size: large;
+}
+#delete:hover{
+    color: white;
+    background-color: red;
+}
+#close{
+    font-size: large;
+}
+
+.modal-overlay-add{
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
+    position: fixed; /* Ocupa a tela inteira */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+.modal-add{
+    box-shadow: 0px 6px 20px 20px rgba(0, 0, 0, 0.349);
+    background-color: #038C5A;
+    border:5px solid #206d48;
+    padding: 20px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+
+    transform: scale(0.7); /* Começa menor */
+    opacity: 0; /* Inicia invisível */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-overlay-add.active{
+    visibility: visible; /* Mostra o modal */
+    opacity: 1; /* Torna o modal visível */
+    transition: opacity 0.5s ease; /* Anima a opacidade sem delay */
+}
+
+.modal-add.active {
+    transform: scale(1); /* Volta ao tamanho original */
+    opacity: 1; /* Faz o modal aparecer */
+}
+
+#salvar-sair{
+    font-size: large;
+}
+#salvar-sair:hover{
+    color: white;
+    background-color: green;
+}
+
+.modal-add #buttons{
+    margin-top: 20px;
+}
+
+#buttons button{
+    border-radius: 10px;
+    height: 40px;
+}
+

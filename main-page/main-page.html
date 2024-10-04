@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha lista de Jogos</title>
+    <link rel="stylesheet" href="css/main-page.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Minha lista de Jogos</h1>
+        </div>
+        <nav>
+            <button id="adicionar">
+                <i class="fa-solid fa-plus"></i><br>
+                Adicionar jogo
+            </button>
+            <button id="login">
+                <i class="fa-solid fa-user"></i><br>
+                Login
+            </button>
+            <button id="pesquisar-jogo">
+                <i class="fa-solid fa-magnifying-glass"></i><br>
+                Pesquisar Jogo
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="colecao-de-jogos-grid">
+            <div class="card">
+                <img src="src/mgs3-cape.jpg" alt="imagem-do-jogo" >
+                <div class="text">
+                    <h1>Metal Gear Solid 3</h1>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+                <button id="btn-mais"><i class="fa-solid fa-caret-down"></i></button>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <img src="src/mgs3-cape.jpg" alt="imagem-do-jogo">
+                <div class="text">
+                    <h1>Metal Gear Solid 3</h1>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+                <button id="btn-mais"><i class="fa-solid fa-caret-down"></i></button>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <img src="src/mgs3-cape.jpg" alt="imagem-do-jogo">
+                <div class="text">
+                    <h1>Metal Gear Solid 3</h1>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+                <button id="btn-mais"><i class="fa-solid fa-caret-down"></i></button>
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+        <div id="modalOverlay" class="modal-overlay">
+            <div class="modal">
+                <div class="text-in">
+                    <form>
+                        <label>
+                            <p>Nome do jogo</p>
+                            <input type="text" placeholder="">
+                        </label>
+                        <label>
+                            <p>Nota</p>
+                            <input type="text" placeholder="">
+                        </label>
+                        <label >
+                            <p>Review</p>
+                            <input type="text" placeholder="">
+                        </label>
+                    </form>
+                </div> 
+                <div id="buttons">
+                    <button id="save">Salvar</button>
+                    <button id="delete">Deletar</button>
+                    <button id="close">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalOverlayAdd" class="modal-overlay-add">
+            <div class="modal-add">
+                <div class="text-in">
+                    <form>
+                        <label>
+                            <p>Nome do jogo</p>
+                            <input type="text" placeholder="">
+                        </label>
+                        <label>
+                            <p>Nota</p>
+                            <input type="text" placeholder="">
+                        </label>
+                        <label >
+                            <p>Review</p>
+                            <input type="text" placeholder="">
+                        </label>
+                    </form>
+                </div> 
+                <div id="buttons">
+                    <button id="salvar-sair">Salvar e sair</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main-page.js"></script>
+    <script src="https://kit.fontawesome.com/295da93310.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
