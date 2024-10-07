@@ -28,61 +28,27 @@
     </header>
     <main>
         <div class="colecao-de-jogos-grid">
+           <!--
             <div class="card">
                 <img src="src/mgs3-cape.jpg" alt="imagem-do-jogo" >
                 <div class="text">
                     <h1>Metal Gear Solid 3</h1>
-                <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </p>
+                    <p>
+                        wwwww
+                    </p>
                 <button id="btn-mais"><i class="fa-solid fa-caret-down"></i></button>
                 </div>
                 
             </div>
-
-            <div class="card">
-                <img src="src/mgs3-cape.jpg" alt="imagem-do-jogo">
-                <div class="text">
-                    <h1>Metal Gear Solid 3</h1>
-                <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </p>
-                <button id="btn-mais"><i class="fa-solid fa-caret-down"></i></button>
-                </div>
-                
-            </div>
-
-            <div class="card">
-                <img src="src/mgs3-cape.jpg" alt="imagem-do-jogo">
-                <div class="text">
-                    <h1>Metal Gear Solid 3</h1>
-                <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </p>
-                <button id="btn-mais"><i class="fa-solid fa-caret-down"></i></button>
-                </div>
-                
-            </div>
-            
+            -->
+        
         </div>
 
 
         <div id="modalOverlay" class="modal-overlay">
             <div class="modal">
                 <div class="text-in">
-                    <form>
+                    <form id="modalForm">
                         <label>
                             <p>Nome do jogo</p>
                             <input type="text" placeholder="">
@@ -108,24 +74,25 @@
         <div id="modalOverlayAdd" class="modal-overlay-add">
             <div class="modal-add">
                 <div class="text-in">
-                    <form>
+                    <form id="addModalForm" >
                         <label>
                             <p>Nome do jogo</p>
-                            <input type="text" placeholder="">
+                            <input type="text" name="nomeJogo" placeholder="">
                         </label>
                         <label>
                             <p>Nota</p>
-                            <input type="text" placeholder="">
+                            <input type="text" name="nota" placeholder="">
                         </label>
                         <label >
                             <p>Review</p>
-                            <input type="text" placeholder="">
+                            <input type="text" name="review" placeholder="">
                         </label>
+                        <div id="buttons">
+                            <button type="submit" id="salvar-sair">Salvar e sair</button>
+                        </div>
                     </form>
                 </div> 
-                <div id="buttons">
-                    <button id="salvar-sair">Salvar e sair</button>
-                </div>
+               
             </div>
         </div>
     </main>

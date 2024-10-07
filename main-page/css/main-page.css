@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/shark-week');
 @import url('https://fonts.cdnfonts.com/css/unbound-gamer');
 @import url('https://fonts.cdnfonts.com/css/bronten');
+@import url('https://fonts.cdnfonts.com/css/iconbit');
 
 *{
     margin: 0;
@@ -83,11 +84,17 @@ main{
     border-radius: 20px;
 }
 
+.card h1{
+    text-align: center;
+    width: 60%;
+}
+
 .card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: inherit;
+   
 }
 
 .card:hover{
@@ -113,7 +120,10 @@ main{
     width: 100%;
     background: linear-gradient(to bottom, #04bf6800, #000000);
 }
+
+
 .text p{
+    font-family: 'IconBitOne', sans-serif;
     color: yellow;
 }
 
