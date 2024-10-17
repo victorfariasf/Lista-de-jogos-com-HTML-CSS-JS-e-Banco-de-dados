@@ -41,10 +41,11 @@ header h1{
 button{
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    border-radius: 20px;
+    width: 170px;
+    height: 60px;
     transition: 500ms;
+    font-size: larger;
 }
 
 button:hover{
@@ -66,8 +67,10 @@ main{
 }
 
 #btn-mais{
-    border-radius: 30px;
-    height: 60px;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+
 
 }
 .card{
@@ -101,7 +104,7 @@ main{
     
     transition: 500ms;
     box-shadow: 0px 6px 20px 20px rgba(0, 0, 0, 0.349);
-    height: 500px;
+    margin-top: 20px ;
 }
 
 .text{
@@ -155,6 +158,21 @@ main{
     transition: opacity 0.5s ease;
     z-index: 1000;
 }
+#modalForm{
+    gap: 10px;
+}
+#modalForm button{
+    border-radius: 10px;
+    height: 40px;
+    font-size: large;
+}
+
+#games{
+    font-size: large;
+    width: 350px;
+    height: 30px;
+}
+
 
 .modal{
     
@@ -188,9 +206,11 @@ main{
 .modal #buttons{
     margin-top: 20px;
 }
-
+.text-in {
+}
 .text-in form{
     
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,10 +219,18 @@ main{
 
 .text-in form label{
     text-align: start;
+    
+}
+
+select{
+    font-family: 'Bronten', sans-serif;
+    font-size: large;
+    width: 350px;
 }
 
 .text-in p{
     width: 100px;
+    font-size: larger;
 }
 .text-in input{
     font-size: large;

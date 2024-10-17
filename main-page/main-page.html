@@ -20,10 +20,10 @@
                 <i class="fa-solid fa-user"></i><br>
                 Login
             </button>
-            <button id="pesquisar-jogo">
+            <!--<button id="pesquisar-jogo">
                 <i class="fa-solid fa-magnifying-glass"></i><br>
                 Pesquisar Jogo
-            </button>
+            </button>-->
         </nav>
     </header>
     <main>
@@ -48,45 +48,75 @@
         <div id="modalOverlay" class="modal-overlay">
             <div class="modal">
                 <div class="text-in">
+                    <h1>Editar</h1>
                     <form id="modalForm">
-                        <label>
-                            <p>Nome do jogo</p>
-                            <input type="text" placeholder="">
+                       
+                        <label for="games">Selecione um jogo:</label>
+                            <select id="games" name="games">
+                                <option value="castlevaniasotn">Castlevania Symphony of The Night</option>
+                                <option value="darksouls">Dark Souls</option>
+                                <option value="darksouls2">Dark Souls II</option>
+                                <option value="darksouls3">Dark Souls III</option>
+                                <option value="final_fantasy">Final Fantasy 7</option>
+                                <option value="metalgearsolid2">Metal Gear Solid 2</option>
+                                <option value="metalgearsolid3">Metal Gear Solid 3</option>
+                                <option value="metalgearsolid3subsistence">Metal Gear Solid 3 Subsistence</option>
+                            </select>   
+                       
+
+                        <label for="stars">Estrelas:</label>
+                            <select id="stars" name="stars">
+                                <option value="oneStar">1</option>
+                                <option value="twoStars">2</option>
+                                <option value="threeStars">3</option>
+                                <option value="fourStars">4</option>
+                                <option value="fiveStars">5</option>
+                            </select>   
+                       
                         </label>
-                        <label>
-                            <p>Nota</p>
-                            <input type="text" placeholder="">
-                        </label>
-                        <label >
-                            <p>Review</p>
-                            <input type="text" placeholder="">
-                        </label>
+                        
+                        <button type="submit" id="save">Salvar</button>
                     </form>
                 </div> 
                 <div id="buttons">
-                    <button id="save">Salvar</button>
+                    
                     <button id="delete">Deletar</button>
                     <button id="close">Fechar</button>
                 </div>
             </div>
         </div>
 
+
         <div id="modalOverlayAdd" class="modal-overlay-add">
             <div class="modal-add">
                 <div class="text-in">
+                    <h1>Adicionar Jogo</h1>
                     <form id="addModalForm" >
-                        <label>
-                            <p>Nome do jogo</p>
-                            <input type="text" name="nomeJogo" placeholder="">
+                        <label for="games">Selecione um jogo:</label>
+                            <select id="games" name="games">
+                                <option value="castlevaniasotn">Castlevania Symphony of The Night</option>
+                                <option value="darksouls">Dark Souls</option>
+                                <option value="darksouls2">Dark Souls II</option>
+                                <option value="darksouls3">Dark Souls III</option>
+                                <option value="final_fantasy">Final Fantasy 7</option>
+                                <option value="metalgearsolid2">Metal Gear Solid 2</option>
+                                <option value="metalgearsolid3">Metal Gear Solid 3</option>
+                                <option value="metalgearsolid3subsistence">Metal Gear Solid 3 Subsistence</option>
+                            </select>   
+                        
+                            
+                        <label for="stars">Estrelas:</label>
+                            <select id="stars" name="stars">
+                                <option value="oneStar">1</option>
+                                <option value="twoStars">2</option>
+                                <option value="threeStars">3</option>
+                                <option value="fourStars">4</option>
+                                <option value="fiveStars">5</option>
+                            </select>   
+
                         </label>
-                        <label>
-                            <p>Nota</p>
-                            <input type="text" name="nota" placeholder="">
-                        </label>
-                        <label >
-                            <p>Review</p>
-                            <input type="text" name="review" placeholder="">
-                        </label>
+            
+                        
                         <div id="buttons">
                             <button type="submit" id="salvar-sair">Salvar e sair</button>
                         </div>
